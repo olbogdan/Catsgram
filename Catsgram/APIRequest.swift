@@ -14,7 +14,11 @@ enum HTTPMethod: String {
 }
 
 protocol APIRequest {
-    var method: HTTPMethod {get}
-    var path: String {get}
-    var body: Data? {get}
+    associatedtype Response
+
+    var method: HTTPMethod { get }
+    var path: String { get }
+    var body: Data? { get }
+
+    func handle(rowResponse: Data) throws -> Response
 }

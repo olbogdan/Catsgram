@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68654A5F27218CA00023559A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A5E27218CA00023559A /* APIClient.swift */; };
+		68654A6127218EBC0023559A /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A6027218EBC0023559A /* APIEnvironment.swift */; };
 		68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFD27217594002B5012 /* CatsgramApp.swift */; };
 		68D5BC0027217594002B5012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* ContentView.swift */; };
 		68D5BC0227217597002B5012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0127217597002B5012 /* Assets.xcassets */; };
 		68D5BC0527217597002B5012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0427217597002B5012 /* Preview Assets.xcassets */; };
-		68D5BC0F27217598002B5012 /* CatsgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC0E27217598002B5012 /* CatsgramTests.swift */; };
 		68D5BC1927217598002B5012 /* CatsgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC1827217598002B5012 /* CatsgramUITests.swift */; };
 		68D5BC1B27217598002B5012 /* CatsgramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC1A27217598002B5012 /* CatsgramUITestsLaunchTests.swift */; };
 		68D5BC28272175F7002B5012 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC27272175F7002B5012 /* Post.swift */; };
 		68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC29272176C4002B5012 /* APIRequest.swift */; };
+		68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC2B272179F4002B5012 /* PostRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,18 +38,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68654A5E27218CA00023559A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		68654A6027218EBC0023559A /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
 		68D5BBFF27217594002B5012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68D5BC0127217597002B5012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D5BC0427217597002B5012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68D5BC0A27217598002B5012 /* CatsgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68D5BC0E27217598002B5012 /* CatsgramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramTests.swift; sourceTree = "<group>"; };
 		68D5BC1427217598002B5012 /* CatsgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BC1827217598002B5012 /* CatsgramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramUITests.swift; sourceTree = "<group>"; };
 		68D5BC1A27217598002B5012 /* CatsgramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		68D5BC27272175F7002B5012 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		68D5BC29272176C4002B5012 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		68D5BC2B272179F4002B5012 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,9 @@
 				68D5BBFF27217594002B5012 /* ContentView.swift */,
 				68D5BC27272175F7002B5012 /* Post.swift */,
 				68D5BC29272176C4002B5012 /* APIRequest.swift */,
+				68D5BC2B272179F4002B5012 /* PostRequest.swift */,
+				68654A5E27218CA00023559A /* APIClient.swift */,
+				68654A6027218EBC0023559A /* APIEnvironment.swift */,
 				68D5BC0127217597002B5012 /* Assets.xcassets */,
 				68D5BC0327217597002B5012 /* Preview Content */,
 			);
@@ -119,7 +126,6 @@
 		68D5BC0D27217598002B5012 /* CatsgramTests */ = {
 			isa = PBXGroup;
 			children = (
-				68D5BC0E27217598002B5012 /* CatsgramTests.swift */,
 			);
 			path = CatsgramTests;
 			sourceTree = "<group>";
@@ -265,8 +271,11 @@
 			files = (
 				68D5BC28272175F7002B5012 /* Post.swift in Sources */,
 				68D5BC0027217594002B5012 /* ContentView.swift in Sources */,
+				68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */,
 				68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */,
 				68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */,
+				68654A5F27218CA00023559A /* APIClient.swift in Sources */,
+				68654A6127218EBC0023559A /* APIEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D5BC0F27217598002B5012 /* CatsgramTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
