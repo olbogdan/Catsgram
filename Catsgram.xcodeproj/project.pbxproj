@@ -56,6 +56,7 @@
 		68654A782722DA0A0023559A /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		68654A7A2722DB570023559A /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		68654A7C2722DE5A0023559A /* UserRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		68654A7E2722E59C0023559A /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
 		68D5BBFF27217594002B5012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		68654A6E2722D84B0023559A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68654A7E2722E59C0023559A /* CoolStoryregular.ttf */,
 				68654A6A2722CF4E0023559A /* Info.plist */,
 				68D5BC0127217597002B5012 /* Assets.xcassets */,
 				68D5BBFD27217594002B5012 /* CatsgramApp.swift */,
@@ -542,6 +544,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Catsgram/Supporting Files/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -573,6 +576,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Catsgram/Supporting Files/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
