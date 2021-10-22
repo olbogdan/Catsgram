@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		68654A5F27218CA00023559A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A5E27218CA00023559A /* APIClient.swift */; };
 		68654A6127218EBC0023559A /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A6027218EBC0023559A /* APIEnvironment.swift */; };
+		68654A632721CE940023559A /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A622721CE940023559A /* PostRequestTests.swift */; };
+		68654A652721CF000023559A /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A642721CF000023559A /* JsonData.swift */; };
+		68654A692722C5D50023559A /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 68654A682722C5D50023559A /* Swifter */; };
 		68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFD27217594002B5012 /* CatsgramApp.swift */; };
 		68D5BC0027217594002B5012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* ContentView.swift */; };
 		68D5BC0227217597002B5012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0127217597002B5012 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		68654A5E27218CA00023559A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		68654A6027218EBC0023559A /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
+		68654A622721CE940023559A /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
+		68654A642721CF000023559A /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		68654A6A2722CF4E0023559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
 		68D5BBFF27217594002B5012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68654A692722C5D50023559A /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68654A662722BD0D0023559A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				68654A642721CF000023559A /* JsonData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		68D5BBF127217594002B5012 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +117,7 @@
 		68D5BBFC27217594002B5012 /* Catsgram */ = {
 			isa = PBXGroup;
 			children = (
+				68654A6A2722CF4E0023559A /* Info.plist */,
 				68D5BBFD27217594002B5012 /* CatsgramApp.swift */,
 				68D5BBFF27217594002B5012 /* ContentView.swift */,
 				68D5BC27272175F7002B5012 /* Post.swift */,
@@ -126,6 +142,8 @@
 		68D5BC0D27217598002B5012 /* CatsgramTests */ = {
 			isa = PBXGroup;
 			children = (
+				68654A622721CE940023559A /* PostRequestTests.swift */,
+				68654A662722BD0D0023559A /* Mocks */,
 			);
 			path = CatsgramTests;
 			sourceTree = "<group>";
@@ -155,6 +173,9 @@
 			dependencies = (
 			);
 			name = Catsgram;
+			packageProductDependencies = (
+				68654A682722C5D50023559A /* Swifter */,
+			);
 			productName = Catsgram;
 			productReference = 68D5BBFA27217594002B5012 /* Catsgram.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +231,7 @@
 					};
 					68D5BC0927217598002B5012 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 68D5BBF927217594002B5012;
 					};
 					68D5BC1327217598002B5012 = {
@@ -227,6 +249,9 @@
 				Base,
 			);
 			mainGroup = 68D5BBF127217594002B5012;
+			packageReferences = (
+				68654A672722C5D50023559A /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 68D5BBFB27217594002B5012 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +308,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68654A632721CE940023559A /* PostRequestTests.swift in Sources */,
+				68654A652721CF000023559A /* JsonData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +465,7 @@
 				DEVELOPMENT_TEAM = 4U2DW67G88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Catsgram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,6 +496,7 @@
 				DEVELOPMENT_TEAM = 4U2DW67G88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Catsgram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -492,6 +521,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U2DW67G88;
@@ -506,6 +536,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bogdanov.app.CatsgramTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Catsgram.app/Catsgram";
@@ -517,6 +548,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U2DW67G88;
@@ -623,6 +655,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68654A672722C5D50023559A /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68654A682722C5D50023559A /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68654A672722C5D50023559A /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 68D5BBF227217594002B5012 /* Project object */;
 }
