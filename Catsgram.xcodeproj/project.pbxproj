@@ -17,6 +17,9 @@
 		68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A782722DA0A0023559A /* LoginSignupView.swift */; };
 		68654A7B2722DB570023559A /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A7A2722DB570023559A /* UserAuthentication.swift */; };
 		68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A7C2722DE5A0023559A /* UserRequests.swift */; };
+		68654A802722ED610023559A /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A7F2722ED610023559A /* AppTitle.swift */; };
+		68654A822722F1E50023559A /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68654A812722EF280023559A /* CoolStoryregular.ttf */; };
+		68654A832722F2000023559A /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68654A812722EF280023559A /* CoolStoryregular.ttf */; };
 		68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFD27217594002B5012 /* CatsgramApp.swift */; };
 		68D5BC0027217594002B5012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* ContentView.swift */; };
 		68D5BC0227217597002B5012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0127217597002B5012 /* Assets.xcassets */; };
@@ -56,7 +59,8 @@
 		68654A782722DA0A0023559A /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		68654A7A2722DB570023559A /* UserAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
 		68654A7C2722DE5A0023559A /* UserRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
-		68654A7E2722E59C0023559A /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
+		68654A7F2722ED610023559A /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
+		68654A812722EF280023559A /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
 		68D5BBFF27217594002B5012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,7 +121,7 @@
 		68654A6E2722D84B0023559A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				68654A7E2722E59C0023559A /* CoolStoryregular.ttf */,
+				68654A812722EF280023559A /* CoolStoryregular.ttf */,
 				68654A6A2722CF4E0023559A /* Info.plist */,
 				68D5BC0127217597002B5012 /* Assets.xcassets */,
 				68D5BBFD27217594002B5012 /* CatsgramApp.swift */,
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				68654A752722D9610023559A /* Color+Catsgram.swift */,
+				68654A7F2722ED610023559A /* AppTitle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68654A822722F1E50023559A /* CoolStoryregular.ttf in Resources */,
 				68D5BC0527217597002B5012 /* Preview Assets.xcassets in Resources */,
 				68D5BC0227217597002B5012 /* Assets.xcassets in Resources */,
 			);
@@ -357,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68654A832722F2000023559A /* CoolStoryregular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68654A802722ED610023559A /* AppTitle.swift in Sources */,
 				68654A7B2722DB570023559A /* UserAuthentication.swift in Sources */,
 				68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */,
 				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
