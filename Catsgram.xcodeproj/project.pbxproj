@@ -13,6 +13,8 @@
 		68654A652721CF000023559A /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A642721CF000023559A /* JsonData.swift */; };
 		68654A692722C5D50023559A /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 68654A682722C5D50023559A /* Swifter */; };
 		68654A6C2722D6B90023559A /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A6B2722D6B90023559A /* APIClientTests.swift */; };
+		68654A772722D9610023559A /* Color+Catsgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A752722D9610023559A /* Color+Catsgram.swift */; };
+		68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A782722DA0A0023559A /* LoginSignupView.swift */; };
 		68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFD27217594002B5012 /* CatsgramApp.swift */; };
 		68D5BC0027217594002B5012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* ContentView.swift */; };
 		68D5BC0227217597002B5012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0127217597002B5012 /* Assets.xcassets */; };
@@ -46,8 +48,10 @@
 		68654A6027218EBC0023559A /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		68654A622721CE940023559A /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
 		68654A642721CF000023559A /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
-		68654A6A2722CF4E0023559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		68654A6A2722CF4E0023559A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68654A6B2722D6B90023559A /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		68654A752722D9610023559A /* Color+Catsgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Catsgram.swift"; sourceTree = "<group>"; };
+		68654A782722DA0A0023559A /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
 		68D5BBFF27217594002B5012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 		68654A6E2722D84B0023559A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				68654A6A2722CF4E0023559A /* Info.plist */,
+				68D5BC0127217597002B5012 /* Assets.xcassets */,
 				68D5BBFD27217594002B5012 /* CatsgramApp.swift */,
 			);
 			path = "Supporting Files";
@@ -144,8 +150,18 @@
 			isa = PBXGroup;
 			children = (
 				68D5BBFF27217594002B5012 /* ContentView.swift */,
+				68654A782722DA0A0023559A /* LoginSignupView.swift */,
+				68654A732722D9610023559A /* Helpers */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		68654A732722D9610023559A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				68654A752722D9610023559A /* Color+Catsgram.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		68D5BBF127217594002B5012 = {
@@ -171,11 +187,9 @@
 		68D5BBFC27217594002B5012 /* Catsgram */ = {
 			isa = PBXGroup;
 			children = (
-				68654A6A2722CF4E0023559A /* Info.plist */,
 				68654A722722D8E20023559A /* UI */,
 				68654A6F2722D8710023559A /* Service Layer */,
 				68654A6E2722D84B0023559A /* Supporting Files */,
-				68D5BC0127217597002B5012 /* Assets.xcassets */,
 				68D5BC0327217597002B5012 /* Preview Content */,
 			);
 			path = Catsgram;
@@ -345,9 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
 				68D5BC28272175F7002B5012 /* Post.swift in Sources */,
 				68D5BC0027217594002B5012 /* ContentView.swift in Sources */,
 				68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */,
+				68654A772722D9610023559A /* Color+Catsgram.swift in Sources */,
 				68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */,
 				68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */,
 				68654A5F27218CA00023559A /* APIClient.swift in Sources */,
@@ -517,7 +533,7 @@
 				DEVELOPMENT_TEAM = 4U2DW67G88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Catsgram/Info.plist;
+				INFOPLIST_FILE = "Catsgram/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -548,7 +564,7 @@
 				DEVELOPMENT_TEAM = 4U2DW67G88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Catsgram/Info.plist;
+				INFOPLIST_FILE = "Catsgram/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
