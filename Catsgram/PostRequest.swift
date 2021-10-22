@@ -14,6 +14,8 @@ struct PostRequest: APIRequest {
     var body: Data? { nil }
 
     func handle(rowResponse: Data) throws -> [Post] {
-        try JSONDecoder().decode(Response.self, from: rowResponse)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return try decoder.decode(Response.self, from: rowResponse)
     }
 }
