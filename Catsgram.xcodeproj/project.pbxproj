@@ -96,6 +96,58 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		68654A6D2722D8290023559A /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BC2B272179F4002B5012 /* PostRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		68654A6E2722D84B0023559A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BBFD27217594002B5012 /* CatsgramApp.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68654A6F2722D8710023559A /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				68654A702722D8940023559A /* Network Engine */,
+				68654A6D2722D8290023559A /* Requests */,
+				68654A712722D8B60023559A /* Models */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		68654A702722D8940023559A /* Network Engine */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BC29272176C4002B5012 /* APIRequest.swift */,
+				68654A5E27218CA00023559A /* APIClient.swift */,
+				68654A6027218EBC0023559A /* APIEnvironment.swift */,
+			);
+			path = "Network Engine";
+			sourceTree = "<group>";
+		};
+		68654A712722D8B60023559A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BC27272175F7002B5012 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68654A722722D8E20023559A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				68D5BBFF27217594002B5012 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		68D5BBF127217594002B5012 = {
 			isa = PBXGroup;
 			children = (
@@ -120,13 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				68654A6A2722CF4E0023559A /* Info.plist */,
-				68D5BBFD27217594002B5012 /* CatsgramApp.swift */,
-				68D5BBFF27217594002B5012 /* ContentView.swift */,
-				68D5BC27272175F7002B5012 /* Post.swift */,
-				68D5BC29272176C4002B5012 /* APIRequest.swift */,
-				68D5BC2B272179F4002B5012 /* PostRequest.swift */,
-				68654A5E27218CA00023559A /* APIClient.swift */,
-				68654A6027218EBC0023559A /* APIEnvironment.swift */,
+				68654A722722D8E20023559A /* UI */,
+				68654A6F2722D8710023559A /* Service Layer */,
+				68654A6E2722D84B0023559A /* Supporting Files */,
 				68D5BC0127217597002B5012 /* Assets.xcassets */,
 				68D5BC0327217597002B5012 /* Preview Content */,
 			);
