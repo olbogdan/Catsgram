@@ -35,14 +35,14 @@ struct FeedCell: View {
                     .foregroundColor(.white)
                     .shadow(color: .white, radius: 3)
                 }(), alignment: .bottomTrailing)
+            CommentCell(post: post)
         }
     }
 }
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
-        let date = Date().advanced(by: TimeInterval(exactly: -5*50)!)
-        let post = Post(caption: "play with me", createdAt: date, createdBy: "SashaKot")
+        let post = Post(caption: "Play with me, I'm your best friend, isn't it?", createdAt: Date(), createdBy: "SashaKot")
         return Group {
             FeedCell(post: post)
             FeedCell(post: post, postImage: UIImage(named: "1")!)
