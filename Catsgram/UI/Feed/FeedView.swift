@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct FeedView: View {
+    @StateObject var feed = Feed()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(feed.posts) { post in
+            Text(post.caption)
+        }
     }
 }
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        let feed = Feed()
+
+        for index in 1...5 {
+            feed.posts.append(
+                Post(id: UUID(), caption: "Caption \(index)", createdAt: Date())
+            )
+        }
+        return FeedView(feed: feed)
     }
 }
