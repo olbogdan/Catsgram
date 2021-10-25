@@ -19,6 +19,7 @@ struct SignInUserRequest: APIRequest {
     var body: Data? { return nil }
 
     func handle(rowResponse: Data) throws -> Void {
+        currentUser = user
         NotificationCenter.default.post(name: .signInNotification, object: nil)
     }
 }
@@ -39,6 +40,7 @@ struct SignUpUserRequest: APIRequest {
     }
 
     func handle(rowResponse: Data) throws -> Void {
+        currentUser = user
         NotificationCenter.default.post(name: .signInNotification, object: nil)
     }
 }

@@ -41,7 +41,8 @@ struct FeedCell: View {
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
-        let post = Post(id: UUID(), caption: "play with me", createdAt: Date())
+        let date = Date().advanced(by: TimeInterval(exactly: -5*50)!)
+        let post = Post(caption: "play with me", createdAt: date, createdBy: "SashaKot")
         return Group {
             FeedCell(post: post)
             FeedCell(post: post, postImage: UIImage(named: "1")!)
