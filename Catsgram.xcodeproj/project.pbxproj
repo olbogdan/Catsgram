@@ -29,6 +29,7 @@
 		68D5BC28272175F7002B5012 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC27272175F7002B5012 /* Post.swift */; };
 		68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC29272176C4002B5012 /* APIRequest.swift */; };
 		68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC2B272179F4002B5012 /* PostRequest.swift */; };
+		68E6F2572726D55C00384621 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2562726D55C00384621 /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		68D5BC27272175F7002B5012 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		68D5BC29272176C4002B5012 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		68D5BC2B272179F4002B5012 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		68E6F2562726D55C00384621 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				68D5BBFF27217594002B5012 /* MainView.swift */,
-				68654A782722DA0A0023559A /* LoginSignupView.swift */,
+				68E6F2552726D53200384621 /* Feed */,
+				68E6F2542726D51200384621 /* Onboarding */,
 				68654A732722D9610023559A /* Helpers */,
 			);
 			path = UI;
@@ -233,6 +236,22 @@
 				68D5BC1A27217598002B5012 /* CatsgramUITestsLaunchTests.swift */,
 			);
 			path = CatsgramUITests;
+			sourceTree = "<group>";
+		};
+		68E6F2542726D51200384621 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				68654A782722DA0A0023559A /* LoginSignupView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		68E6F2552726D53200384621 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				68E6F2562726D55C00384621 /* FeedView.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +403,7 @@
 				68654A772722D9610023559A /* Color+Catsgram.swift in Sources */,
 				68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */,
 				68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */,
+				68E6F2572726D55C00384621 /* FeedView.swift in Sources */,
 				68654A5F27218CA00023559A /* APIClient.swift in Sources */,
 				68654A6127218EBC0023559A /* APIEnvironment.swift in Sources */,
 			);
