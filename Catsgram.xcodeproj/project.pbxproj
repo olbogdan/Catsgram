@@ -33,6 +33,10 @@
 		68E6F2592726EABD00384621 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2582726EABD00384621 /* Feed.swift */; };
 		68E6F25B2726F43B00384621 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F25A2726F43B00384621 /* FeedCell.swift */; };
 		68E6F25D272711FC00384621 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F25C272711FC00384621 /* CommentCell.swift */; };
+		68E6F26227271CB100384621 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F26127271CB100384621 /* TakePhotoViewController.swift */; };
+		68E6F2642727290100384621 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E6F2632727290100384621 /* TakePhotoStoryboard.storyboard */; };
+		68E6F268272733E100384621 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F267272733E100384621 /* CreatePostView.swift */; };
+		68E6F26A272737AE00384621 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F269272737AE00384621 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		68E6F2582726EABD00384621 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		68E6F25A2726F43B00384621 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		68E6F25C272711FC00384621 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		68E6F26127271CB100384621 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoViewController.swift; sourceTree = "<group>"; };
+		68E6F2632727290100384621 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
+		68E6F267272733E100384621 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		68E6F269272737AE00384621 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				68D5BBFF27217594002B5012 /* MainView.swift */,
+				68E6F269272737AE00384621 /* UserData.swift */,
 				68E6F2552726D53200384621 /* Feed */,
+				68E6F25E27271BDE00384621 /* Post */,
 				68E6F2542726D51200384621 /* Onboarding */,
 				68654A732722D9610023559A /* Helpers */,
 			);
@@ -261,6 +271,16 @@
 				68E6F25C272711FC00384621 /* CommentCell.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		68E6F25E27271BDE00384621 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				68E6F26127271CB100384621 /* TakePhotoViewController.swift */,
+				68E6F2632727290100384621 /* TakePhotoStoryboard.storyboard */,
+				68E6F267272733E100384621 /* CreatePostView.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68654A822722F1E50023559A /* CoolStoryregular.ttf in Resources */,
+				68E6F2642727290100384621 /* TakePhotoStoryboard.storyboard in Resources */,
 				68D5BC0527217597002B5012 /* Preview Assets.xcassets in Resources */,
 				68D5BC0227217597002B5012 /* Assets.xcassets in Resources */,
 			);
@@ -405,6 +426,7 @@
 				68654A802722ED610023559A /* AppTitle.swift in Sources */,
 				68654A7B2722DB570023559A /* UserAuthentication.swift in Sources */,
 				68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */,
+				68E6F26A272737AE00384621 /* UserData.swift in Sources */,
 				68E6F2592726EABD00384621 /* Feed.swift in Sources */,
 				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
 				68D5BC28272175F7002B5012 /* Post.swift in Sources */,
@@ -415,6 +437,8 @@
 				68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */,
 				68E6F25B2726F43B00384621 /* FeedCell.swift in Sources */,
 				68E6F2572726D55C00384621 /* FeedView.swift in Sources */,
+				68E6F26227271CB100384621 /* TakePhotoViewController.swift in Sources */,
+				68E6F268272733E100384621 /* CreatePostView.swift in Sources */,
 				68654A5F27218CA00023559A /* APIClient.swift in Sources */,
 				68654A6127218EBC0023559A /* APIEnvironment.swift in Sources */,
 				68E6F25D272711FC00384621 /* CommentCell.swift in Sources */,

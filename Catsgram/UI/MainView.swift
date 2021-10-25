@@ -20,6 +20,8 @@ struct MainView: View {
     //            }
     //    }()
     @State var showingLogin = false
+    @State var showingPostView = false
+    @StateObject var userData = UserData()
 
     let signInPublisher = NotificationCenter.default
         .publisher(for: .signInNotification)
@@ -30,25 +32,29 @@ struct MainView: View {
         .receive(on: RunLoop.main)
 
     var body: some View {
-        TabView {
+        TabView(selection: $userData.selectedTab) {
             FeedView()
                 .tabItem {
                     Image("home")
                     Text("Home")
+                }.tag(0)
+
+            Text("")
+                .sheet(isPresented: $showingPostView) {
+                    CreatePostView()
+                        .environmentObject(userData)
                 }
-                .tag(0)
-            Text("Tab Content 2")
                 .tabItem {
                     Image("photo")
                     Text("Post")
                 }
                 .tag(1)
+
             Text("Tab Content 3")
                 .tabItem {
                     Image("profile")
                     Text("Profile")
-                }
-                .tag(2)
+                }.tag(2)
         }
         .accentColor(.accentGreen)
         .padding()
@@ -60,6 +66,9 @@ struct MainView: View {
         }
         .onReceive(signOutPublisher) { _ in
             showingLogin = true
+        }
+        .onReceive(userData.$selectedTab) { selectedTab in
+            showingPostView = (selectedTab == 1)
         }
     }
 }
