@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Catsgram
 //
 //  Created by Oleksndr Bogdanov on 21.10.21.
@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
 //    var publisher: AnyCancellable = {
 //        let client = APIClient()
 //        let request = PostRequest()
@@ -44,8 +44,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

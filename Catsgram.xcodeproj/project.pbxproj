@@ -21,7 +21,7 @@
 		68654A822722F1E50023559A /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68654A812722EF280023559A /* CoolStoryregular.ttf */; };
 		68654A832722F2000023559A /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68654A812722EF280023559A /* CoolStoryregular.ttf */; };
 		68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFD27217594002B5012 /* CatsgramApp.swift */; };
-		68D5BC0027217594002B5012 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* ContentView.swift */; };
+		68D5BC0027217594002B5012 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* MainView.swift */; };
 		68D5BC0227217597002B5012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0127217597002B5012 /* Assets.xcassets */; };
 		68D5BC0527217597002B5012 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0427217597002B5012 /* Preview Assets.xcassets */; };
 		68D5BC1927217598002B5012 /* CatsgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC1827217598002B5012 /* CatsgramUITests.swift */; };
@@ -63,7 +63,7 @@
 		68654A812722EF280023559A /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
-		68D5BBFF27217594002B5012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		68D5BBFF27217594002B5012 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		68D5BC0127217597002B5012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D5BC0427217597002B5012 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68D5BC0A27217598002B5012 /* CatsgramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsgramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +161,7 @@
 		68654A722722D8E20023559A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				68D5BBFF27217594002B5012 /* ContentView.swift */,
+				68D5BBFF27217594002B5012 /* MainView.swift */,
 				68654A782722DA0A0023559A /* LoginSignupView.swift */,
 				68654A732722D9610023559A /* Helpers */,
 			);
@@ -379,7 +379,7 @@
 				68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */,
 				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
 				68D5BC28272175F7002B5012 /* Post.swift in Sources */,
-				68D5BC0027217594002B5012 /* ContentView.swift in Sources */,
+				68D5BC0027217594002B5012 /* MainView.swift in Sources */,
 				68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */,
 				68654A772722D9610023559A /* Color+Catsgram.swift in Sources */,
 				68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */,
