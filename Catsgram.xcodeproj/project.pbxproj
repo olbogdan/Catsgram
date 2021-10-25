@@ -30,6 +30,7 @@
 		68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC29272176C4002B5012 /* APIRequest.swift */; };
 		68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC2B272179F4002B5012 /* PostRequest.swift */; };
 		68E6F2572726D55C00384621 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2562726D55C00384621 /* FeedView.swift */; };
+		68E6F2592726EABD00384621 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2582726EABD00384621 /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		68D5BC29272176C4002B5012 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		68D5BC2B272179F4002B5012 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		68E6F2562726D55C00384621 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		68E6F2582726EABD00384621 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				68D5BC27272175F7002B5012 /* Post.swift */,
 				68654A7A2722DB570023559A /* UserAuthentication.swift */,
+				68E6F2582726EABD00384621 /* Feed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				68654A802722ED610023559A /* AppTitle.swift in Sources */,
 				68654A7B2722DB570023559A /* UserAuthentication.swift in Sources */,
 				68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */,
+				68E6F2592726EABD00384621 /* Feed.swift in Sources */,
 				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
 				68D5BC28272175F7002B5012 /* Post.swift in Sources */,
 				68D5BC0027217594002B5012 /* MainView.swift in Sources */,
