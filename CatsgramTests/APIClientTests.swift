@@ -36,7 +36,7 @@ class APIClientTests: XCTestCase {
     func testPublisherForRequest() {
         server.GET["api/v1/posts"] = { _ in HttpResponse.ok(.text(JsonData.goodFeed)) }
 
-        let request = PostRequest()
+        let request = GetAllPostsRequest()
         let client = APIClient(environment: .local)
 
         var networkResult: Subscribers.Completion<Error>?

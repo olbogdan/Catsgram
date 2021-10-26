@@ -18,7 +18,7 @@ struct CreatePostView: View {
                     postImage = image
                     showNext = true
                 }
-                NavigationLink(destination: Image(uiImage: postImage), isActive: $showNext) {
+                NavigationLink(destination: AddDescriptionView(image: postImage), isActive: $showNext) {
                     EmptyView()
                 }
             }

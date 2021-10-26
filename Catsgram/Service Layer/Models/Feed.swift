@@ -22,7 +22,7 @@ class Feed: ObservableObject {
 
     func loadFeed() {
         let client = APIClient()
-        let request = PostRequest()
+        let request = GetAllPostsRequest()
         getPostSubscriber = client.publisherForRequest(request)
             .sink { [weak self] result in
                 if case .failure(let error) = result {

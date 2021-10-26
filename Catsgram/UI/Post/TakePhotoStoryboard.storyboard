@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-A6-c4s">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-A6-c4s" userLabel="Preview View" customClass="CameraPreviewView" customModule="Catsgram" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="652"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -31,7 +31,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="default" weight="regular"/>
                                         </state>
                                         <connections>
-                                            <action selector="shutterButtonTapped" destination="Dpq-rx-hw1" eventType="touchUpInside" id="W0x-18-KkA"/>
+                                            <action selector="takePhotoTapped" destination="Dpq-rx-hw1" eventType="touchUpInside" id="9RJ-YP-b3D"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -56,6 +56,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LuF-Zm-jkS"/>
+                    <connections>
+                        <outlet property="previewView" destination="KJm-A6-c4s" id="gsE-Zu-pUB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJD-Qt-msk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

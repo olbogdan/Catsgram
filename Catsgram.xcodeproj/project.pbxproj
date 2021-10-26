@@ -28,7 +28,6 @@
 		68D5BC1B27217598002B5012 /* CatsgramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC1A27217598002B5012 /* CatsgramUITestsLaunchTests.swift */; };
 		68D5BC28272175F7002B5012 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC27272175F7002B5012 /* Post.swift */; };
 		68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC29272176C4002B5012 /* APIRequest.swift */; };
-		68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BC2B272179F4002B5012 /* PostRequest.swift */; };
 		68E6F2572726D55C00384621 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2562726D55C00384621 /* FeedView.swift */; };
 		68E6F2592726EABD00384621 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2582726EABD00384621 /* Feed.swift */; };
 		68E6F25B2726F43B00384621 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F25A2726F43B00384621 /* FeedCell.swift */; };
@@ -37,6 +36,12 @@
 		68E6F2642727290100384621 /* TakePhotoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E6F2632727290100384621 /* TakePhotoStoryboard.storyboard */; };
 		68E6F268272733E100384621 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F267272733E100384621 /* CreatePostView.swift */; };
 		68E6F26A272737AE00384621 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F269272737AE00384621 /* UserData.swift */; };
+		68E6F26C27281A0100384621 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F26B27281A0100384621 /* CameraPreviewView.swift */; };
+		68E6F26E27281CC800384621 /* PhotoCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F26D27281CC800384621 /* PhotoCaptureController.swift */; };
+		68E6F2702728507200384621 /* AddDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F26F2728507200384621 /* AddDescriptionView.swift */; };
+		68E6F2722728540A00384621 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2712728540A00384621 /* PostController.swift */; };
+		68E6F274272854E300384621 /* PostRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F273272854E300384621 /* PostRequests.swift */; };
+		68E6F2762728567A00384621 /* ImageRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2752728567A00384621 /* ImageRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +85,6 @@
 		68D5BC1A27217598002B5012 /* CatsgramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		68D5BC27272175F7002B5012 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		68D5BC29272176C4002B5012 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		68D5BC2B272179F4002B5012 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
 		68E6F2562726D55C00384621 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		68E6F2582726EABD00384621 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		68E6F25A2726F43B00384621 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -89,6 +93,12 @@
 		68E6F2632727290100384621 /* TakePhotoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TakePhotoStoryboard.storyboard; sourceTree = "<group>"; };
 		68E6F267272733E100384621 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
 		68E6F269272737AE00384621 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		68E6F26B27281A0100384621 /* CameraPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		68E6F26D27281CC800384621 /* PhotoCaptureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureController.swift; sourceTree = "<group>"; };
+		68E6F26F2728507200384621 /* AddDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDescriptionView.swift; sourceTree = "<group>"; };
+		68E6F2712728540A00384621 /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		68E6F273272854E300384621 /* PostRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRequests.swift; sourceTree = "<group>"; };
+		68E6F2752728567A00384621 /* ImageRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +138,9 @@
 		68654A6D2722D8290023559A /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				68D5BC2B272179F4002B5012 /* PostRequest.swift */,
+				68E6F273272854E300384621 /* PostRequests.swift */,
 				68654A7C2722DE5A0023559A /* UserRequests.swift */,
+				68E6F2752728567A00384621 /* ImageRequests.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -276,9 +287,13 @@
 		68E6F25E27271BDE00384621 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				68E6F26D27281CC800384621 /* PhotoCaptureController.swift */,
+				68E6F26B27281A0100384621 /* CameraPreviewView.swift */,
 				68E6F26127271CB100384621 /* TakePhotoViewController.swift */,
 				68E6F2632727290100384621 /* TakePhotoStoryboard.storyboard */,
 				68E6F267272733E100384621 /* CreatePostView.swift */,
+				68E6F26F2728507200384621 /* AddDescriptionView.swift */,
+				68E6F2712728540A00384621 /* PostController.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -428,13 +443,18 @@
 				68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */,
 				68E6F26A272737AE00384621 /* UserData.swift in Sources */,
 				68E6F2592726EABD00384621 /* Feed.swift in Sources */,
+				68E6F2762728567A00384621 /* ImageRequests.swift in Sources */,
 				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
 				68D5BC28272175F7002B5012 /* Post.swift in Sources */,
+				68E6F274272854E300384621 /* PostRequests.swift in Sources */,
+				68E6F2702728507200384621 /* AddDescriptionView.swift in Sources */,
 				68D5BC0027217594002B5012 /* MainView.swift in Sources */,
-				68D5BC2C272179F4002B5012 /* PostRequest.swift in Sources */,
 				68654A772722D9610023559A /* Color+Catsgram.swift in Sources */,
+				68E6F26E27281CC800384621 /* PhotoCaptureController.swift in Sources */,
 				68D5BC2A272176C4002B5012 /* APIRequest.swift in Sources */,
 				68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */,
+				68E6F26C27281A0100384621 /* CameraPreviewView.swift in Sources */,
+				68E6F2722728540A00384621 /* PostController.swift in Sources */,
 				68E6F25B2726F43B00384621 /* FeedCell.swift in Sources */,
 				68E6F2572726D55C00384621 /* FeedView.swift in Sources */,
 				68E6F26227271CB100384621 /* TakePhotoViewController.swift in Sources */,
