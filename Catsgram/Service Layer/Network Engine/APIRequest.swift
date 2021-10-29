@@ -19,6 +19,7 @@ protocol APIRequest {
     var method: HTTPMethod { get }
     var path: String { get }
     var body: Data? { get }
+    var contentType: String { get }
 
     func handle(rowResponse: Data) throws -> Response
 }

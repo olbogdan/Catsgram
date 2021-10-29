@@ -3,9 +3,10 @@ import Foundation
 struct GetAllPostsRequest: APIRequest {
     typealias Response = [Post]
 
-    var method: HTTPMethod { return .GET }
-    var path: String { return "/posts" }
-    var body: Data? { return nil }
+    var method: HTTPMethod { .GET }
+    var path: String { "/posts" }
+    var body: Data? { nil }
+    var contentType: String { "application/json" }
 
     func handle(rowResponse: Data) throws -> [Post] {
         let decoder = JSONDecoder()
@@ -15,20 +16,20 @@ struct GetAllPostsRequest: APIRequest {
 }
 
 struct CreateNewPostRequest: APIRequest, Codable {
-    let post: Post
-
-    init(caption: String) {
-        self.post = Post(caption: caption)
-    }
-
     typealias Response = Post
 
-    var method: HTTPMethod { return .POST }
-    var path: String { return "/posts" }
+    let post: Post
+    var contentType: String { "application/json" }
+    var method: HTTPMethod { .POST }
+    var path: String { "/posts" }
     var body: Data? {
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .iso8601
         return try? encoder.encode(post)
+    }
+
+    init(caption: String) {
+        self.post = Post(caption: caption)
     }
 
     func handle(rowResponse: Data) throws -> Post {

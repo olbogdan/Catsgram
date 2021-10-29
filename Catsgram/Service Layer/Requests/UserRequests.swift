@@ -14,11 +14,12 @@ struct SignInUserRequest: APIRequest {
 
     typealias Response = Void
 
-    var method: HTTPMethod { return .GET }
-    var path: String { return "/user" }
-    var body: Data? { return nil }
+    var contentType: String { "application/json" }
+    var method: HTTPMethod { .GET }
+    var path: String { "/user" }
+    var body: Data? { nil }
 
-    func handle(rowResponse: Data) throws -> Void {
+    func handle(rowResponse: Data) throws {
         currentUser = user
         NotificationCenter.default.post(name: .signInNotification, object: nil)
     }
@@ -33,13 +34,14 @@ struct SignUpUserRequest: APIRequest {
 
     typealias Response = Void
 
-    var method: HTTPMethod { return .POST }
-    var path: String { return "/user" }
+    var contentType: String { "application/json" }
+    var method: HTTPMethod { .POST }
+    var path: String { "/user" }
     var body: Data? {
-        return try? JSONEncoder().encode(user)
+        try? JSONEncoder().encode(user)
     }
 
-    func handle(rowResponse: Data) throws -> Void {
+    func handle(rowResponse: Data) throws {
         currentUser = user
         NotificationCenter.default.post(name: .signInNotification, object: nil)
     }
