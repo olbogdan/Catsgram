@@ -12,6 +12,6 @@ struct APIEnvironment {
 }
 
 extension APIEnvironment {
-    static let prod = APIEnvironment(baseUrl: URL(string: "https/olcatgram.com/api/v1")!)
+    static let prod = APIEnvironment(baseUrl: URL(string: "http://192.168.1.17:8081/api/v1")!)
     static let local = APIEnvironment(baseUrl: URL(string: "http://localhost:8080/api/v1")!)
 }

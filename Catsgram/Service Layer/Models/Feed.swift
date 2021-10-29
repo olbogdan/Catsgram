@@ -15,9 +15,12 @@ class Feed: ObservableObject {
     var getPostSubscriber: AnyCancellable?
 
     init() {
+        //load personalized feeds
         signInSubscriber = NotificationCenter.default.publisher(for: .signInNotification).sink { [weak self] _ in
             self?.loadFeed()
         }
+        //load feeds
+        loadFeed()
     }
 
     func loadFeed() {
