@@ -26,6 +26,7 @@ struct APIClient {
     func publisherForRequest<T: APIRequest>(_ request: T) -> AnyPublisher<T.Response, Error> {
         let url = environment.baseUrl.appendingPathComponent(request.path)
         var urlRequest = URLRequest(url: url)
+        urlRequest.addValue(request.contentType, forHTTPHeaderField: "Content-Type")
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.httpBody = request.body
 
