@@ -42,6 +42,7 @@
 		68E6F2722728540A00384621 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2712728540A00384621 /* PostController.swift */; };
 		68E6F274272854E300384621 /* PostRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F273272854E300384621 /* PostRequests.swift */; };
 		68E6F2762728567A00384621 /* ImageRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6F2752728567A00384621 /* ImageRequests.swift */; };
+		68F3A2442731774E009C5B1A /* KituraContracts in Frameworks */ = {isa = PBXBuildFile; productRef = 68F3A2432731774E009C5B1A /* KituraContracts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68F3A2442731774E009C5B1A /* KituraContracts in Frameworks */,
 				68654A692722C5D50023559A /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +318,7 @@
 			name = Catsgram;
 			packageProductDependencies = (
 				68654A682722C5D50023559A /* Swifter */,
+				68F3A2432731774E009C5B1A /* KituraContracts */,
 			);
 			productName = Catsgram;
 			productReference = 68D5BBFA27217594002B5012 /* Catsgram.app */;
@@ -392,6 +395,7 @@
 			mainGroup = 68D5BBF127217594002B5012;
 			packageReferences = (
 				68654A672722C5D50023559A /* XCRemoteSwiftPackageReference "swifter" */,
+				68F3A2422731774E009C5B1A /* XCRemoteSwiftPackageReference "KituraContracts" */,
 			);
 			productRefGroup = 68D5BBFB27217594002B5012 /* Products */;
 			projectDirPath = "";
@@ -829,6 +833,14 @@
 				kind = branch;
 			};
 		};
+		68F3A2422731774E009C5B1A /* XCRemoteSwiftPackageReference "KituraContracts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/KituraContracts.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -836,6 +848,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 68654A672722C5D50023559A /* XCRemoteSwiftPackageReference "swifter" */;
 			productName = Swifter;
+		};
+		68F3A2432731774E009C5B1A /* KituraContracts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68F3A2422731774E009C5B1A /* XCRemoteSwiftPackageReference "KituraContracts" */;
+			productName = KituraContracts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
