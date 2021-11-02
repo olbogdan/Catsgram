@@ -19,7 +19,7 @@ struct MainView: View {
     //                print(newPosts)
     //            }
     //    }()
-    @State var showingLogin = false
+    @State var showingLogin = true
     @State var showingPostView = false
     @StateObject var userData = UserData()
 

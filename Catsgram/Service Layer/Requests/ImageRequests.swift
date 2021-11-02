@@ -8,6 +8,7 @@ struct UploadImageRequest: APIRequest {
     var contentType: String { "image/jpeg" }
     var method: HTTPMethod { .POST }
     var path: String { "/image" }
+    var params: EmptyParams? { nil }
     var body: Data? {
         imageData
     }

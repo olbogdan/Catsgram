@@ -18,6 +18,9 @@ struct SignInUserRequest: APIRequest {
     var method: HTTPMethod { .GET }
     var path: String { "/user" }
     var body: Data? { nil }
+    var params: UserParams? {
+        UserParams(id: user.id, password: user.password ?? "")
+    }
 
     func handle(rowResponse: Data) throws {
         currentUser = user
@@ -37,6 +40,7 @@ struct SignUpUserRequest: APIRequest {
     var contentType: String { "application/json" }
     var method: HTTPMethod { .POST }
     var path: String { "/user" }
+    var params: EmptyParams? { nil }
     var body: Data? {
         try? JSONEncoder().encode(user)
     }
