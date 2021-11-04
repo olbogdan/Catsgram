@@ -5,11 +5,13 @@
 //  Created by Oleksndr Bogdanov on 25.10.21.
 //
 
+import Combine
 import SwiftUI
 
 struct FeedCell: View {
     var post: Post
     @State var postImage: UIImage? = nil
+    @State private var subscriptions: Set<AnyCancellable> = []
     private let placeholderImage = UIImage(systemName: "photo")!
 
     var body: some View {
@@ -35,6 +37,19 @@ struct FeedCell: View {
                     .foregroundColor(.white)
                     .shadow(color: .white, radius: 3)
                 }(), alignment: .bottomTrailing)
+                .onAppear {
+                    guard let imageId = post.id else {
+                        return
+                    }
+                    let client = APIClient()
+                    let request = DownloadImageRequest(imageId: imageId)
+                    client.publisherForRequest(request)
+                        .replaceError(with: placeholderImage)
+                        .sink { image in
+                            postImage = image
+                        }
+                        .store(in: &subscriptions)
+                }
             CommentCell(post: post)
         }
         .buttonStyle(PlainButtonStyle())
