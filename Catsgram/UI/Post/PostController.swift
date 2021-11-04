@@ -21,8 +21,7 @@ final class PostController: ObservableObject {
             }
             .flatMap { imageId, imageData -> AnyPublisher<Void, Error> in
                 let imageRequest = UploadImageRequest(imageId: imageId, imageData: imageData)
-                let localClient = APIClient(environment: .local81)
-                return localClient.publisherForRequest(imageRequest)
+                return client.publisherForRequest(imageRequest)
             }
             .sink(receiveCompletion: { completion in
                 self.isRunning = false

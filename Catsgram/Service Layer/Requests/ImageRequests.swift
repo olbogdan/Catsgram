@@ -12,6 +12,7 @@ struct UploadImageRequest: APIRequest {
     var body: Data? {
         imageData
     }
+    var additionalHeaders: [String: String] { ["Slug":"\(imageId.uuidString).jpg"] }
 
     init(imageId: UUID, imageData: Data) {
         self.imageId = imageId

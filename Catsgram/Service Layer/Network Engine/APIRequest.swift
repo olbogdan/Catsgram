@@ -25,6 +25,7 @@ protocol APIRequest {
     var body: Data? { get }
     var contentType: String { get }
     var params: QueryParamsType? { get }
+    var additionalHeaders: [String: String] { get }
 
     func handle(rowResponse: Data) throws -> Response
 }

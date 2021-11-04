@@ -8,6 +8,7 @@ struct GetAllPostsRequest: APIRequest {
     var body: Data? { nil }
     var contentType: String { "application/json" }
     var params: EmptyParams? { nil }
+    var additionalHeaders: [String: String] { [:] }
 
     func handle(rowResponse: Data) throws -> [Post] {
         let decoder = JSONDecoder()
@@ -29,6 +30,7 @@ struct CreateNewPostRequest: APIRequest, Codable {
         encoder.dateEncodingStrategy = .iso8601
         return try? encoder.encode(post)
     }
+    var additionalHeaders: [String: String] { [:] }
 
     init(caption: String) {
         self.post = Post(caption: caption)

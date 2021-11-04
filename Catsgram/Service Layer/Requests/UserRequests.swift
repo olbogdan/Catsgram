@@ -21,6 +21,7 @@ struct SignInUserRequest: APIRequest {
     var params: UserParams? {
         UserParams(id: user.id, password: user.password ?? "")
     }
+    var additionalHeaders: [String: String] { [:] }
 
     func handle(rowResponse: Data) throws {
         currentUser = user
@@ -44,6 +45,7 @@ struct SignUpUserRequest: APIRequest {
     var body: Data? {
         try? JSONEncoder().encode(user)
     }
+    var additionalHeaders: [String: String] { [:] }
 
     func handle(rowResponse: Data) throws {
         currentUser = user

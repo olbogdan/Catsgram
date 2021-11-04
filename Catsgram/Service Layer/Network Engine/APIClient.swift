@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 import KituraContracts
+import CoreMedia
 
 enum APIError: Error {
     case requestFailed(Int)
@@ -47,6 +48,9 @@ struct APIClient {
         urlRequest.addValue(request.contentType, forHTTPHeaderField: "Content-Type")
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.httpBody = request.body
+        request.additionalHeaders.forEach { key, value in
+            urlRequest.addValue(value, forHTTPHeaderField: key)
+        }
 
         let publisher = session.dataTaskPublisher(for: urlRequest)
             .tryMap { data, response -> Data in
