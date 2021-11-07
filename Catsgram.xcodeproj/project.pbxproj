@@ -20,6 +20,7 @@
 		68654A802722ED610023559A /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68654A7F2722ED610023559A /* AppTitle.swift */; };
 		68654A822722F1E50023559A /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68654A812722EF280023559A /* CoolStoryregular.ttf */; };
 		68654A832722F2000023559A /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68654A812722EF280023559A /* CoolStoryregular.ttf */; };
+		689A91A927387FCD008B75CB /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689A91A827387FCD008B75CB /* Like.swift */; };
 		68D5BBFE27217594002B5012 /* CatsgramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFD27217594002B5012 /* CatsgramApp.swift */; };
 		68D5BC0027217594002B5012 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BBFF27217594002B5012 /* MainView.swift */; };
 		68D5BC0227217597002B5012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D5BC0127217597002B5012 /* Assets.xcassets */; };
@@ -75,6 +76,7 @@
 		68654A7C2722DE5A0023559A /* UserRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
 		68654A7F2722ED610023559A /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
 		68654A812722EF280023559A /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
+		689A91A827387FCD008B75CB /* Like.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 		68D5BBFA27217594002B5012 /* Catsgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catsgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BBFD27217594002B5012 /* CatsgramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsgramApp.swift; sourceTree = "<group>"; };
 		68D5BBFF27217594002B5012 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				68D5BC27272175F7002B5012 /* Post.swift */,
 				68654A7A2722DB570023559A /* UserAuthentication.swift */,
 				68E6F2582726EABD00384621 /* Feed.swift */,
+				689A91A827387FCD008B75CB /* Like.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				68654A7B2722DB570023559A /* UserAuthentication.swift in Sources */,
 				68654A7D2722DE5A0023559A /* UserRequests.swift in Sources */,
 				68E6F26A272737AE00384621 /* UserData.swift in Sources */,
+				689A91A927387FCD008B75CB /* Like.swift in Sources */,
 				68E6F2592726EABD00384621 /* Feed.swift in Sources */,
 				68E6F2762728567A00384621 /* ImageRequests.swift in Sources */,
 				68654A792722DA0A0023559A /* LoginSignupView.swift in Sources */,
