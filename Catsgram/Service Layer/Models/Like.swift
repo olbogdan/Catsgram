@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import KituraContracts
 
 struct Like: Codable {
     var id: UUID?
@@ -19,4 +20,9 @@ struct Like: Codable {
         self.cratedByUser = cratedByUser
         self.createdAt = createdAt
     }
+}
+
+struct LikeParams: QueryParams {
+    var postId: String
+    var createdByUser: String
 }

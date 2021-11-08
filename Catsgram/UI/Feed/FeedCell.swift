@@ -22,8 +22,9 @@ struct FeedCell: View {
                 .cornerRadius(15)
                 .overlay({
                     VStack(spacing: 10) {
-                        Button {} label: {
-                            Image(systemName: "heart.fill")
+                        Button(action: toggleLike) {
+                            let imageName = post.isLiked ?"heart.fill" : "heart"
+                            Image(systemName: imageName)
                                 .foregroundColor(Color.red)
                         }
                         Button {} label: {
@@ -54,14 +55,51 @@ struct FeedCell: View {
         }
         .buttonStyle(PlainButtonStyle())
     }
+
+    private func toggleLike() {
+        if post.isLiked {
+            deleteLike()
+        } else {
+            addLike()
+        }
+    }
+
+    private func addLike() {
+        guard let postId = post.id else { fatalError() }
+        let client = APIClient()
+        let request = AddLikeToPostRequest(postId: postId)
+        client.publisherForRequest(request)
+            .sink(receiveCompletion: { result in
+                if case .finished = result {
+                    // TODO: update the post
+                }
+            }, receiveValue: { _ in })
+            .store(in: &subscriptions)
+    }
+
+    private func deleteLike() {
+        guard let postId = post.id else { fatalError() }
+        let client = APIClient()
+        let request = DeleteLikeFromPostRequest(postId: postId)
+        client.publisherForRequest(request)
+            .sink(receiveCompletion: { result in
+                if case .finished = result {
+                    // TODO: update the post
+                }
+            }, receiveValue: { _ in })
+            .store(in: &subscriptions)
+    }
 }
 
 struct FeedCell_Previews: PreviewProvider {
     static var previews: some View {
         let post = Post(caption: "Play with me, I'm your best friend, isn't it?", createdAt: Date(), createdBy: "SashaKot")
+        var likedPost = post
+        likedPost.isLiked = true
         return Group {
             FeedCell(post: post)
             FeedCell(post: post, postImage: UIImage(named: "1")!)
+            FeedCell(post: likedPost, postImage: UIImage(named: "1")!)
         }
         .previewLayout(.sizeThatFits)
     }
